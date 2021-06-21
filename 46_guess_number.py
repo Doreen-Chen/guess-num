@@ -7,14 +7,12 @@
 import random  #亂數
 
 r = random.randint(1, 100)  # 產生亂數
-ans = int(input('猜猜數字是多少: '))
 while True:
+	ans = int(input('猜猜數字是多少: '))
     if ans > r:
         print('比答案大')
-        ans = int(input('猜猜數字是多少: '))
     elif ans < r:
         print('比答案小')
-        ans = int(input('猜猜數字是多少: '))
     else:
         print('終於猜對了')
         break
